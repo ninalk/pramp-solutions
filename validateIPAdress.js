@@ -52,3 +52,6 @@ function validateIP(ip) {
 
   return true;
 }
+
+// Time complexity: O(N) linear where N is the number of string characters in ip
+// Space complexity: O(N) at split operation
