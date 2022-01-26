@@ -49,3 +49,6 @@ function findGrantsCap(grantsArray, newBudget) {
 
 // TEST EXAMPLE
 console.log(findGrantsCap([2, 100, 50, 120, 1000], 190))
+
+// Time complexity: O(N * log(N)) to sort and for loop is O(N)
+// Space complexity: O(1) since only constant space is used

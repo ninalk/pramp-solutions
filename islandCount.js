@@ -23,7 +23,7 @@ function getNumberOfIslands(binaryMatrix) {
     col = binaryMatrix[0].length,
     islandCount = 0;
 
-  // loop through binaryMatrix
+  // loop through binaryMatrix and use DFS on undirected graph
   for (let r = 0; r < row; r++) {
     for (let c = 0; c < col; c++) {
       if (binaryMatrix[r][c] === 1) {
@@ -53,3 +53,8 @@ function checkNeighbors(row, col, matrix) {
     checkNeighbors(row, col + 1, matrix) // check right
   }
 }
+
+// Time complexity: O(N*M) where N and M are the number of rows and columns. Therefore, time
+// complexity is linear in the size of the input.
+
+// Space complexity: O(1) since no extra space is being used
